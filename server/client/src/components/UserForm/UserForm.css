@@ -1,0 +1,136 @@
+.userform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: violet;
+}
+
+
+.userform {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #1f2029;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  backdrop-filter: blur(25px) saturate(130%);
+  -webkit-backdrop-filter: blur(25px) saturate(130%);
+  background-color: rgba(21, 42, 80, 0.38);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.userform-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.userform-image img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.userform-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.userform h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.userform label {
+  display: block;
+  margin-bottom: 10px;
+  color: #bbb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.userform input[type="text"],
+.userform select {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.userform input[type="text"]:focus,
+.userform select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.userform button[type="submit"] {
+  width: 100%;
+  height: 44px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 0 20px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 8px 24px rgba(167, 196, 255, 0.2);
+  cursor: pointer;
+}
+
+.userform button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .userform {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userform-image {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .userform-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .userform {
+    padding: 10px;
+  }
+
+  .userform img {
+    display: none;
+  }
+}
